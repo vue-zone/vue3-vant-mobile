@@ -1,6 +1,6 @@
 <div id="top" align="center">
 
-<img src="https://cdn.jsdelivr.net/gh/easy-temps/easy-static/cover.png" alt="cover" />
+<img src="https://cdn.jsdelivr.net/gh/vue-zone/static/cover.png" alt="cover" />
 
 <h1 align="center">vue3-vant-mobile</h1>
 
@@ -11,14 +11,14 @@ An mobile web apps template based on the Vue 3 ecosystem.
 一个基于 Vue 3 生态系统的移动 web 应用模板，帮助你快速完成业务开发。
 
 <p>
-<img src="https://img.shields.io/github/license/easy-temps/vue3-vant-mobile" alt="license" />
-<img src="https://img.shields.io/github/package-json/v/easy-temps/vue3-vant-mobile" alt="version" />
-<img src="https://img.shields.io/github/repo-size/easy-temps/vue3-vant-mobile" alt="repo-size" />
-<img src="https://img.shields.io/github/languages/top/easy-temps/vue3-vant-mobile" alt="languages" />
-<img src="https://img.shields.io/github/issues-closed/easy-temps/vue3-vant-mobile" alt="issues" />
+<img src="https://img.shields.io/github/license/vue-zone/vue3-vant-mobile" alt="license" />
+<img src="https://img.shields.io/github/package-json/v/vue-zone/vue3-vant-mobile" alt="version" />
+<img src="https://img.shields.io/github/repo-size/vue-zone/vue3-vant-mobile" alt="repo-size" />
+<img src="https://img.shields.io/github/languages/top/vue-zone/vue3-vant-mobile" alt="languages" />
+<img src="https://img.shields.io/github/issues-closed/vue-zone/vue3-vant-mobile" alt="issues" />
 </p>
 
-[🌐预览](https://vue3-vant-mobile.netlify.app) / [📖文档](https://easy-temps.github.io/easy-docs/vue3-vant-mobile/) / [🗨️交流](https://github.com/easy-temps/vue3-vant-mobile/issues/56) / [📝反馈](https://github.com/easy-temps/vue3-vant-mobile/issues)
+[🌐预览](https://vue3-vant-mobile.netlify.app) / [📖文档](https://vue-zone.github.io/docs/vue3-vant-mobile/) / [🗨️交流](https://github.com/vue-zone/vue3-vant-mobile/issues/56) / [📝反馈](https://github.com/vue-zone/vue3-vant-mobile/issues)
 
 <a href="https://deepwiki.com/easy-temps/vue3-vant-mobile"><img src="https://deepwiki.com/badge.svg" alt="Ask DeepWiki"></a> [![Netlify Status](https://api.netlify.com/api/v1/badges/e6828bd2-2904-4c3e-a67c-b97d32aa1275/deploy-status)](https://app.netlify.com/sites/vue3-vant-mobile/deploys)
 
@@ -122,14 +122,14 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ### GitHub Template
 
-[Create a repo from this template on GitHub](https://github.com/easy-temps/vue3-vant-mobile/generate)
+[Create a repo from this template on GitHub](https://github.com/vue-zone/vue3-vant-mobile/generate)
 
 ### Clone to local
 
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx tiged easy-temps/vue3-vant-mobile my-mobile-app
+npx tiged vue-zone/vue3-vant-mobile my-mobile-app
 cd my-mobile-app
 pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
 ```
@@ -172,7 +172,7 @@ Go to [Netlify](https://app.netlify.com/start) and select your clone, `OK` along
 
 ## Community 👏
 
-We recommend that [issue](https://github.com/easy-temps/vue3-vant-mobile/issues) be used for problem feedback, or [Wechat group](https://github.com/easy-temps/vue3-vant-mobile/issues/56).
+We recommend that [issue](https://github.com/vue-zone/vue3-vant-mobile/issues) be used for problem feedback, or [Wechat group](https://github.com/vue-zone/vue3-vant-mobile/issues/56).
 
 ## Donation ☕
 
