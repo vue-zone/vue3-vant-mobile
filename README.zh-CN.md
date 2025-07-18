@@ -28,7 +28,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 6](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 7](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - 就是快！
 
 - 🗂 [基于文件的路由](./src/router)
 
