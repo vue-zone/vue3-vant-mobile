@@ -1,34 +1,50 @@
 <script setup lang="ts">
-import { routeWhiteList } from '@/config/routes'
+import { rootRouteList } from '@/config/routes'
 
 const route = useRoute()
 const router = useRouter()
-
-function onBack() {
-  if (window.history.state.back)
-    history.back()
-  else
-    router.replace('/')
-}
-
 const { t } = useI18n()
 
+/**
+ * Get page title
+ * Located in src/locales/json
+ */
 const title = computed(() => {
-  if (!route.meta)
-    return ''
+  if (route.name) {
+    return t(`navbar.${route.name}`)
+  }
 
-  return route.meta.i18n ? t(route.meta.i18n) : (route.meta.title || '')
+  return t('navbar.Undefined')
 })
 
-const showLeftArrow = computed(() => route.name && routeWhiteList.includes(route.name))
+/**
+ * Show the left arrow
+ * If route name is in rootRouteList, hide left arrow
+ */
+const showLeftArrow = computed(() => {
+  if (route.name && rootRouteList.includes(route.name)) {
+    return false
+  }
+
+  return true
+})
+
+function onBack() {
+  if (window.history.state.back) {
+    history.back()
+  }
+  else {
+    router.replace('/')
+  }
+}
 </script>
 
 <template>
   <VanNavBar
     :title="title"
     :fixed="true"
-    clickable placeholder
-    :left-arrow="!showLeftArrow"
+    :left-arrow="showLeftArrow"
+    placeholder clickable
     @click-left="onBack"
   />
 </template>

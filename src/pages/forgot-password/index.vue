@@ -21,17 +21,17 @@ const validatorPassword = (val: string) => val === postData.password
 
 const rules = reactive({
   email: [
-    { required: true, message: t('forgot-password.pleaseEnterEmail') },
+    { required: true, message: t('forgotPassword.pleaseEnterEmail') },
   ],
   code: [
-    { required: true, message: t('forgot-password.pleaseEnterCode') },
+    { required: true, message: t('forgotPassword.pleaseEnterCode') },
   ],
   password: [
-    { required: true, message: t('forgot-password.pleaseEnterPassword') },
+    { required: true, message: t('forgotPassword.pleaseEnterPassword') },
   ],
   confirmPassword: [
-    { required: true, message: t('forgot-password.pleaseEnterConfirmPassword') },
-    { required: true, validator: validatorPassword, message: t('forgot-password.passwordsDoNotMatch') },
+    { required: true, message: t('forgotPassword.pleaseEnterConfirmPassword') },
+    { required: true, validator: validatorPassword, message: t('forgotPassword.passwordsDoNotMatch') },
   ] as FieldRule[],
 })
 
@@ -42,8 +42,8 @@ async function reset() {
     const res = await userStore.reset()
 
     if (res.code === 0) {
-      showNotify({ type: 'success', message: t('forgot-password.passwordResetSuccess') })
-      router.push({ name: 'login' })
+      showNotify({ type: 'success', message: t('forgotPassword.passwordResetSuccess') })
+      router.push({ name: 'Login' })
     }
   }
   finally {
@@ -54,19 +54,19 @@ async function reset() {
 const isGettingCode = ref(false)
 
 const buttonText = computed(() => {
-  return isGettingCode.value ? t('forgot-password.gettingCode') : t('forgot-password.getCode')
+  return isGettingCode.value ? t('forgotPassword.gettingCode') : t('forgotPassword.getCode')
 })
 
 async function getCode() {
   if (!postData.email) {
-    showNotify({ type: 'warning', message: t('forgot-password.pleaseEnterEmail') })
+    showNotify({ type: 'warning', message: t('forgotPassword.pleaseEnterEmail') })
     return
   }
 
   isGettingCode.value = true
   const res = await userStore.getCode()
   if (res.code === 0)
-    showNotify({ type: 'success', message: `${t('forgot-password.sendCodeSuccess')}: ${res.result}` })
+    showNotify({ type: 'success', message: `${t('forgotPassword.sendCodeSuccess')}: ${res.result}` })
 
   isGettingCode.value = false
 }
@@ -80,7 +80,7 @@ async function getCode() {
           v-model.trim="postData.email"
           :rules="rules.email"
           name="email"
-          :placeholder="$t('forgot-password.email')"
+          :placeholder="$t('forgotPassword.email')"
         />
       </div>
 
@@ -89,7 +89,7 @@ async function getCode() {
           v-model.trim="postData.code"
           :rules="rules.code"
           name="code"
-          :placeholder="$t('forgot-password.code')"
+          :placeholder="$t('forgotPassword.code')"
         >
           <template #button>
             <van-button size="small" type="primary" plain @click="getCode">
@@ -105,7 +105,7 @@ async function getCode() {
           type="password"
           :rules="rules.password"
           name="password"
-          :placeholder="$t('forgot-password.password')"
+          :placeholder="$t('forgotPassword.password')"
         />
       </div>
 
@@ -115,7 +115,7 @@ async function getCode() {
           type="password"
           :rules="rules.confirmPassword"
           name="confirmPassword"
-          :placeholder="$t('forgot-password.comfirmPassword')"
+          :placeholder="$t('forgotPassword.confirmPassword')"
         />
       </div>
 
@@ -126,22 +126,19 @@ async function getCode() {
           native-type="submit"
           round block
         >
-          {{ $t('forgot-password.confirm') }}
+          {{ $t('forgotPassword.confirm') }}
         </van-button>
       </div>
     </van-form>
 
     <GhostButton to="login" block :style="{ 'margin-top': vw(8) }">
-      {{ $t('forgot-password.backToLogin') }}
+      {{ $t('forgotPassword.backToLogin') }}
     </GhostButton>
   </div>
 </template>
 
 <route lang="json5">
 {
-  name: 'forgot-password',
-  meta: {
-    i18n: 'menus.forgot-password'
-  },
+  name: 'ForgotPassword'
 }
 </route>

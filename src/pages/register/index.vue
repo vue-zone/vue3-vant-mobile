@@ -47,7 +47,7 @@ async function register() {
 
     if (res.code === 0) {
       showNotify({ type: 'success', message: t('register.registerSuccess') })
-      router.push({ name: 'login' })
+      router.push({ name: 'Login' })
     }
   }
   finally {
@@ -128,7 +128,7 @@ async function getCode() {
           type="password"
           :rules="rules.confirmPassword"
           name="confirmPassword"
-          :placeholder="$t('register.comfirmPassword')"
+          :placeholder="$t('register.confirmPassword')"
         />
       </div>
 
@@ -152,9 +152,6 @@ async function getCode() {
 
 <route lang="json5">
 {
-  name: 'register',
-  meta: {
-    i18n: 'menus.register'
-  },
+  name: 'Register'
 }
 </route>

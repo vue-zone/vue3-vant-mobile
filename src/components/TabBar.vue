@@ -1,22 +1,27 @@
 <script setup lang="ts">
-import { routeWhiteList } from '@/config/routes'
+import { rootRouteList } from '@/config/routes'
 
 const active = ref(0)
 const route = useRoute()
 
-const show = computed(() => route.name && routeWhiteList.includes(route.name))
+const show = computed(() => {
+  if (route.name && rootRouteList.includes(route.name)) {
+    return true
+  }
+  return false
+})
 </script>
 
 <template>
   <van-tabbar v-if="show" v-model="active" route placeholder>
     <van-tabbar-item replace to="/">
-      {{ $t('layouts.home') }}
+      {{ $t('tabbar.home') }}
       <template #icon>
         <div class="i-carbon:home" />
       </template>
     </van-tabbar-item>
     <van-tabbar-item replace to="/profile">
-      {{ $t('layouts.profile') }}
+      {{ $t('tabbar.profile') }}
       <template #icon>
         <div class="i-carbon:user" />
       </template>

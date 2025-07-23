@@ -41,7 +41,7 @@ async function login(values: any) {
     await userStore.login({ ...postData, ...values })
     const { redirect, ...othersQuery } = router.currentRoute.value.query
     router.push({
-      name: (redirect as keyof RouteMap) || 'home',
+      name: (redirect as keyof RouteMap) || 'Home',
       query: {
         ...othersQuery,
       },
@@ -92,20 +92,17 @@ async function login(values: any) {
     </van-form>
 
     <GhostButton block to="register" :style="{ 'margin-top': vw(18) }">
-      {{ $t('login.sign-up') }}
+      {{ $t('login.signUp') }}
     </GhostButton>
 
     <GhostButton block to="forgot-password">
-      {{ $t('login.forgot-password') }}
+      {{ $t('login.forgotPassword') }}
     </GhostButton>
   </div>
 </template>
 
 <route lang="json5">
 {
-  name: 'login',
-  meta: {
-    i18n: 'menus.login'
-  },
+  name: 'Login'
 }
 </route>

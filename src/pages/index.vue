@@ -10,13 +10,13 @@ const checked = computed({
 })
 
 const menuItems = computed(() => ([
-  { title: t('menus.mockGuide'), route: 'mock' },
-  { title: t('menus.echartsDemo'), route: 'charts' },
-  { title: t('menus.unocssExample'), route: 'unocss' },
-  { title: t('menus.persistPiniaState'), route: 'counter' },
-  { title: t('menus.keepAlive'), route: 'keepalive' },
-  { title: t('menus.scrollCache'), route: 'scroll-cache' },
-  { title: t('menus.404Demo'), route: 'unknown' },
+  { title: t('navbar.Mock'), route: 'mock' },
+  { title: t('navbar.Charts'), route: 'charts' },
+  { title: t('navbar.UnoCSS'), route: 'unocss' },
+  { title: t('navbar.Counter'), route: 'counter' },
+  { title: t('navbar.KeepAlive'), route: 'keepalive' },
+  { title: t('navbar.ScrollCache'), route: 'scroll-cache' },
+  { title: t('navbar.404'), route: 'unknown' },
 ]))
 
 const showLanguagePicker = ref(false)
@@ -30,8 +30,8 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 </script>
 
 <template>
-  <van-cell-group :title="$t('menus.basicSettings')" :border="false" :inset="true">
-    <van-cell center :title="$t('menus.darkMode')">
+  <van-cell-group :title="$t('home.settings')" :border="false" :inset="true">
+    <van-cell center :title="$t('home.darkMode')">
       <template #right-icon>
         <van-switch
           v-model="checked"
@@ -43,13 +43,13 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 
     <van-cell
       is-link
-      :title="$t('menus.language')"
+      :title="$t('home.language')"
       :value="language"
       @click="showLanguagePicker = true"
     />
   </van-cell-group>
 
-  <van-cell-group :title="$t('menus.exampleComponents')" :border="false" :inset="true">
+  <van-cell-group :title="$t('home.examples')" :border="false" :inset="true">
     <template v-for="item in menuItems" :key="item.route">
       <van-cell :title="item.title" :to="item.route" is-link />
     </template>
@@ -67,10 +67,6 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 
 <route lang="json5">
 {
-  name: 'home',
-  meta: {
-    title: '主页',
-    i18n: 'menus.home'
-  },
+  name: 'Home'
 }
 </route>

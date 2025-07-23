@@ -1,7 +1,7 @@
 <script setup lang="ts">
 const { t } = useI18n()
 
-const barOption = {
+const barOption = ref({
   title: {},
   tooltip: {},
   xAxis: {
@@ -15,9 +15,9 @@ const barOption = {
       data: [5, 20, 36, 10, 10, 20],
     },
   ],
-}
+})
 
-const lineOption = {
+const lineOption = ref({
   xAxis: {
     type: 'category',
     data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
@@ -31,9 +31,9 @@ const lineOption = {
       type: 'line',
     },
   ],
-}
+})
 
-const scoreOption = {
+const scoreOption = ref({
   tooltip: {
     formatter: '{a} <br/>{b} : {c}%',
   },
@@ -52,25 +52,17 @@ const scoreOption = {
       ],
     },
   ],
-}
-
-const refBarOption = ref(barOption)
-const refLineOption = ref(lineOption)
-const refScoreOption = ref(scoreOption)
+})
 </script>
 
 <template>
-  <Chart :option="refBarOption" :style="{ height: '330px' }" />
-  <Chart :option="refLineOption" :style="{ height: '330px' }" />
-  <Chart :option="refScoreOption" :style="{ height: '330px' }" />
+  <Chart :option="barOption" :style="{ height: '330px' }" />
+  <Chart :option="lineOption" :style="{ height: '330px' }" />
+  <Chart :option="scoreOption" :style="{ height: '330px' }" />
 </template>
 
 <route lang="json5">
 {
-  name: 'charts',
-  meta: {
-    title: '📊 Echarts 演示',
-    i18n: 'menus.echartsDemo'
-  },
+  name: 'Charts'
 }
 </route>

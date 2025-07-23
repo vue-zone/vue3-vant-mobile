@@ -10,11 +10,11 @@ const userInfo = computed(() => userStore.userInfo)
 
 function Logout() {
   showConfirmDialog({
-    title: t('settings.comfirmTitle'),
+    title: t('settings.confirmTitle'),
   })
     .then(() => {
       userStore.logout()
-      router.push({ name: 'home' })
+      router.push({ name: 'Home' })
     })
     .catch(() => {})
 }
@@ -40,10 +40,6 @@ function Logout() {
 
 <route lang="json5">
 {
-  name: 'settings',
-  meta: {
-    title: '我的设置',
-    i18n: 'menus.settings'
-  },
+  name: 'Settings'
 }
 </route>

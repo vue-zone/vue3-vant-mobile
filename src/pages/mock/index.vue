@@ -35,11 +35,7 @@ function pull() {
 
 <route lang="json5">
 {
-  name: 'mock',
-  meta: {
-    title: '💿 Mock 指南',
-    i18n: 'menus.mockGuide'
-  },
+  name: 'Mock',
 }
 </route>
 

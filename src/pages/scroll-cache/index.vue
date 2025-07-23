@@ -73,8 +73,6 @@ onBeforeRouteLeave(() => {
 {
   name: 'ScrollCache',
   meta: {
-    title: '📜 ScrollCache',
-    i18n: 'menus.scrollCache',
     keepAlive: true
   },
 }

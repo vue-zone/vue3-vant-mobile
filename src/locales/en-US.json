@@ -1,29 +1,46 @@
 {
-  "menus": {
-    "home": "Home",
-    "profile": "My Center",
-    "darkMode": "🌗 Dark Mode",
-    "mockGuide": "💿 Mock Guide",
-    "language": "📚 Language",
-    "404Demo": "🙅 Page 404 Demo",
-    "echartsDemo": "📊 Echarts Demo",
-    "persistPiniaState": "🍍 Persistent Pinia state",
-    "unocssExample": "🎨 Unocss example",
-    "keepAlive": "🧡 KeepAlive Demo",
-    "scrollCache": "📜 Scroll Cache Demo",
-    "login": "🔒 Login",
-    "register": "Register",
-    "settings": "Settings",
-    "basicSettings": "Basic Settings",
-    "exampleComponents": "Example components",
-    "forgot-password": "Forgot Password"
+  "navbar": {
+    "Home": "Home",
+    "Profile": "Profile",
+    "Mock": "🗂️ Mock",
+    "Charts": "📊 Charts",
+    "UnoCSS": "⚡ UnoCSS",
+    "Counter": "🍍 Persistent State",
+    "KeepAlive": "♻️ Page Cache",
+    "ScrollCache": "📍 Scroll Cache",
+    "Login": "🧑‍💻 Login",
+    "Register": "🧑‍💻 Register",
+    "ForgotPassword": "❓ Forgot Password",
+    "Settings": "⚙️ Settings",
+    "404": "⚠️ Page 404",
+    "Undefined": "🤷 Undefined title"
   },
+
+  "tabbar": {
+    "home": "HOME",
+    "profile": "PROFILE"
+  },
+
+  "home": {
+    "darkMode": "🌗 Dark Mode",
+    "language": "📚 Language",
+    "settings": "Settings",
+    "examples": "Examples"
+  },
+
+  "profile": {
+    "login": "Login",
+    "settings": "Settings",
+    "docs": "Docs"
+  },
+
   "mock": {
     "fromAsyncData": "Data from asynchronous requests",
     "noData": "No data",
     "pull": "Pull",
     "reset": "Reset"
   },
+
   "charts": {
     "January": "Jan",
     "February": "Feb",
@@ -32,24 +49,28 @@
     "May": "May",
     "June": "Jun"
   },
-  "layouts": {
-    "home": "HOME",
-    "profile": "PROFILE"
+
+  "counter": {
+    "description": "This counter's state is persisted via Pinia. Try refreshing the page to see it in action."
   },
-  "profile": {
-    "login": "Login",
-    "settings": "Settings",
-    "docs": "Docs"
+
+  "unocss": {
+    "title": "Hello, Unocss!",
+    "description": "This is a simple example of Unocss in action.",
+    "button": "Button"
   },
+
   "keepAlive": {
     "label": "The current component will be cached"
   },
+
   "scrollCache": {
     "sectionTitle": "Section title",
     "sectionText": "Section text text text text text text text text text text",
     "finished": "Already at the bottom ~",
     "loading": "Loading..."
   },
+
   "login": {
     "login": "Sign In",
     "logout": "Sign Out",
@@ -57,14 +78,15 @@
     "password": "Password",
     "pleaseEnterEmail": "Please enter email",
     "pleaseEnterPassword": "Please enter password",
-    "sign-up": "Click to sign up",
-    "forgot-password": "Forgot password?"
+    "signUp": "Click to sign up",
+    "forgotPassword": "Forgot password?"
   },
-  "forgot-password": {
+
+  "forgotPassword": {
     "email": "Email",
     "code": "Code",
     "password": "Password",
-    "comfirmPassword": "Password again",
+    "confirmPassword": "Password again",
     "pleaseEnterEmail": "Please enter email",
     "pleaseEnterCode": "Please enter code",
     "pleaseEnterPassword": "Please enter password",
@@ -77,12 +99,13 @@
     "sendCodeSuccess": "Sent, the code is",
     "passwordResetSuccess": "Password reset succeeded"
   },
+
   "register": {
     "email": "Email",
     "code": "Code",
     "nickname": "Nickname",
     "password": "Password",
-    "comfirmPassword": "Password again",
+    "confirmPassword": "Password again",
     "pleaseEnterEmail": "Please enter email",
     "pleaseEnterCode": "Please enter code",
     "pleaseEnterNickname": "Please enter nickname",
@@ -96,9 +119,10 @@
     "sendCodeSuccess": "Sent, the code is",
     "registerSuccess": "Register succeeded"
   },
+
   "settings": {
     "logout": "Sign Out",
     "currentVersion": "Current Version",
-    "comfirmTitle": "Confirm Exit?"
+    "confirmTitle": "Confirm Exit?"
   }
 }

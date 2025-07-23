@@ -11,7 +11,7 @@ function login() {
   if (isLogin.value)
     return
 
-  router.push({ name: 'login', query: { redirect: 'profile' } })
+  router.push({ name: 'Login', query: { redirect: 'Profile' } })
 }
 </script>
 
@@ -47,10 +47,6 @@ function login() {
 
 <route lang="json5">
 {
-  name: 'profile',
-  meta: {
-    title: '个人中心',
-    i18n: 'menus.profile'
-  },
+  name: 'Profile'
 }
 </route>

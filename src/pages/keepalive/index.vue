@@ -3,20 +3,20 @@ defineOptions({
   name: 'KeepAlive',
 })
 
-const value = ref(1)
+const value = ref(0)
 </script>
 
 <template>
-  <p>{{ $t('keepAlive.label') }}</p>
-  <van-stepper v-model="value" class="mt-10" />
+  <div class="text-14 space-y-10">
+    <p>{{ $t('keepAlive.label') }}</p>
+    <van-stepper v-model="value" />
+  </div>
 </template>
 
 <route lang="json5">
 {
   name: 'KeepAlive',
   meta: {
-    title: '🧡 KeepAlive',
-    i18n: 'menus.keepAlive',
     keepAlive: true
   },
 }

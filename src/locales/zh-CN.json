@@ -1,29 +1,46 @@
 {
-  "menus": {
-    "home": "主页",
-    "profile": "个人中心",
-    "darkMode": "🌗 暗黑模式",
-    "mockGuide": "💿 Mock 指南",
-    "language": "📚 语言",
-    "echartsDemo": "📊 Echarts 演示",
-    "persistPiniaState": "🍍 持久化 Pinia 状态",
-    "404Demo": "🙅 404页 演示",
-    "unocssExample": "🎨 Unocss 示例",
-    "keepAlive": "🧡 KeepAlive 演示",
-    "scrollCache": "📜 滚动缓存 演示",
-    "login": "🔒 用户登录",
-    "register": "用户注册",
-    "settings": "设置",
-    "basicSettings": "基本设置",
-    "exampleComponents": "示例组件",
-    "forgot-password": "忘记密码"
+  "navbar": {
+    "Home": "主页",
+    "Profile": "我的",
+    "Mock": "🗂️ Mock",
+    "Charts": "📊 图表",
+    "UnoCSS": "⚡ UnoCSS",
+    "Counter": "🍍 状态持久化",
+    "KeepAlive": "♻️ 页面缓存",
+    "ScrollCache": "📍 滚动缓存",
+    "Login": "🧑‍💻 登录",
+    "Register": "🧑‍💻 注册",
+    "ForgotPassword": "❓ 忘记密码",
+    "Settings": "⚙️ 设置",
+    "404": "⚠️ 404 页面",
+    "Undefined": "🤷 未定义标题"
   },
+
+  "tabbar": {
+    "home": "首页",
+    "profile": "我的"
+  },
+
+  "home": {
+    "darkMode": "🌗 深色模式",
+    "language": "📚 多语言",
+    "settings": "设置",
+    "examples": "示例"
+  },
+
+  "profile": {
+    "login": "登录",
+    "settings": "设置",
+    "docs": "文档"
+  },
+
   "mock": {
     "fromAsyncData": "来自异步请求的数据",
+    "noData": "暂无数据",
     "pull": "请求",
-    "reset": "清空",
-    "noData": "暂无数据"
+    "reset": "清空"
   },
+
   "charts": {
     "January": "1月",
     "February": "2月",
@@ -32,39 +49,44 @@
     "May": "5月",
     "June": "6月"
   },
-  "layouts": {
-    "home": "首页",
-    "profile": "我的"
+
+  "counter": {
+    "description": "该计数器的状态通过 Pinia 持久化。刷新页面试试看！"
   },
-  "profile": {
-    "login": "登录",
-    "settings": "设置",
-    "docs": "文档"
+
+  "unocss": {
+    "title": "你好, Unocss!",
+    "description": "这是一个简单的 Unocss 使用示例。",
+    "button": "按钮"
   },
+
   "keepAlive": {
     "label": "当前组件将会被缓存"
   },
+
   "scrollCache": {
     "sectionTitle": "段落标题",
     "sectionText": "段落内容段落内容段落内容段落内容段落内容段落内容",
     "finished": "已经到底啦 ~",
     "loading": "加载中..."
   },
+
   "login": {
     "login": "登录",
-    "logout": "退出",
+    "logout": "退出登录",
     "email": "邮箱",
     "password": "密码",
     "pleaseEnterEmail": "请输入邮箱",
     "pleaseEnterPassword": "请输入密码",
-    "sign-up": "还没有账号？点击注册",
-    "forgot-password": "忘记密码？"
+    "signUp": "还没有账号？点击注册",
+    "forgotPassword": "忘记密码？"
   },
-  "forgot-password": {
+
+  "forgotPassword": {
     "email": "邮箱",
     "code": "验证码",
     "password": "密码",
-    "comfirmPassword": "再次输入密码",
+    "confirmPassword": "再次输入密码",
     "pleaseEnterEmail": "请输入邮箱",
     "pleaseEnterCode": "请输入验证码",
     "pleaseEnterPassword": "请输入密码",
@@ -77,12 +99,13 @@
     "sendCodeSuccess": "已发送，验证码为",
     "passwordResetSuccess": "密码重置成功"
   },
+
   "register": {
     "email": "邮箱",
     "code": "验证码",
     "nickname": "昵称",
     "password": "密码",
-    "comfirmPassword": "再次输入密码",
+    "confirmPassword": "再次输入密码",
     "pleaseEnterEmail": "请输入邮箱",
     "pleaseEnterCode": "请输入验证码",
     "pleaseEnterNickname": "请输入昵称",
@@ -96,9 +119,10 @@
     "sendCodeSuccess": "已发送，验证码为",
     "registerSuccess": "注册成功"
   },
+
   "settings": {
     "logout": "退出登录",
     "currentVersion": "当前版本",
-    "comfirmTitle": "确认退出？"
+    "confirmTitle": "确认退出？"
   }
 }
