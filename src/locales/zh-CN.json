@@ -1,4 +1,9 @@
 {
+  "app": {
+    "name": "Vue3 移动端模板",
+    "description": "一个基于 Vue 3 生态系统的移动 web 应用模板"
+  },
+
   "navbar": {
     "Home": "主页",
     "Profile": "我的",

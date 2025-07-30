@@ -1,2 +1,4 @@
-export const appName = 'vue3-vant-mobile'
-export const appDescription = 'An mobile web apps template based on the Vue 3 ecosystem'
+import { i18n } from '@/utils/i18n'
+
+export const appName = () => i18n.global.t('app.name')
+export const appDescription = () => i18n.global.t('app.description')

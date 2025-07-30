@@ -31,7 +31,7 @@ router.beforeEach(async (to: EnhancedRouteLocation) => {
   routeCacheStore.addRoute(to)
 
   // Set page title
-  setPageTitle(to.meta.title)
+  setPageTitle(to.name)
 
   if (isLogin() && !userStore.userInfo?.uid)
     await userStore.info()

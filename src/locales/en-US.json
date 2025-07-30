@@ -1,4 +1,9 @@
 {
+  "app": {
+    "name": "Vue3 Vant Mobile",
+    "description": "An mobile web apps template based on the Vue 3 ecosystem"
+  },
+
   "navbar": {
     "Home": "Home",
     "Profile": "Profile",

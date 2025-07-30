@@ -1,16 +1,19 @@
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n'
 import { useRouteCacheStore } from '@/stores'
 
+const { t } = useI18n()
+
 useHead({
-  title: 'Vue3 Vant Mobile',
+  title: () => t('app.name'),
   meta: [
     {
       name: 'description',
-      content: 'An mobile web apps template based on the Vue 3 ecosystem',
+      content: () => t('app.description'),
     },
     {
       name: 'theme-color',
-      content: () => isDark.value ? '#00aba9' : '#ffffff',
+      content: () => isDark.value ? '#0B0A0A' : '#ffffff',
     },
   ],
   link: [
