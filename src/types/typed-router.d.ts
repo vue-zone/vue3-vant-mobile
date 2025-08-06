@@ -32,4 +32,80 @@ declare module 'vue-router/auto-routes' {
     'Settings': RouteRecordInfo<'Settings', '/settings', Record<never, never>, Record<never, never>>,
     'UnoCSS': RouteRecordInfo<'UnoCSS', '/unocss', Record<never, never>, Record<never, never>>,
   }
+
+  /**
+   * Route file to route info map by unplugin-vue-router.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * Each key is a file path relative to the project root with 2 properties:
+   * - routes: union of route names of the possible routes when in this page (passed to useRoute<...>())
+   * - views: names of nested views (can be passed to <RouterView name="...">)
+   *
+   * @internal
+   */
+  export interface _RouteFileInfoMap {
+    'src/pages/index.vue': {
+      routes: 'Home'
+      views: never
+    }
+    'src/pages/[...all].vue': {
+      routes: '404'
+      views: never
+    }
+    'src/pages/charts/index.vue': {
+      routes: 'Charts'
+      views: never
+    }
+    'src/pages/counter/index.vue': {
+      routes: 'Counter'
+      views: never
+    }
+    'src/pages/forgot-password/index.vue': {
+      routes: 'ForgotPassword'
+      views: never
+    }
+    'src/pages/keepalive/index.vue': {
+      routes: 'KeepAlive'
+      views: never
+    }
+    'src/pages/login/index.vue': {
+      routes: 'Login'
+      views: never
+    }
+    'src/pages/mock/index.vue': {
+      routes: 'Mock'
+      views: never
+    }
+    'src/pages/profile/index.vue': {
+      routes: 'Profile'
+      views: never
+    }
+    'src/pages/register/index.vue': {
+      routes: 'Register'
+      views: never
+    }
+    'src/pages/scroll-cache/index.vue': {
+      routes: 'ScrollCache'
+      views: never
+    }
+    'src/pages/settings/index.vue': {
+      routes: 'Settings'
+      views: never
+    }
+    'src/pages/unocss/index.vue': {
+      routes: 'UnoCSS'
+      views: never
+    }
+  }
+
+  /**
+   * Get a union of possible route names in a certain route component file.
+   * Used by the volar plugin to automatically type useRoute()
+   *
+   * @internal
+   */
+  export type _RouteNamesForFilePath<FilePath extends string> =
+    _RouteFileInfoMap extends Record<FilePath, infer Info>
+      ? Info['routes']
+      : keyof RouteNamedMap
 }

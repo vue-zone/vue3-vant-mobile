@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { onMounted, onUnmounted, ref, watch } from 'vue'
 import type { ECharts } from 'echarts'
 import * as echarts from 'echarts'
 import { debounce } from 'lodash-es'
@@ -6,7 +7,12 @@ import { addListener, removeListener } from 'resize-detector'
 import dark from './dark'
 
 const props = defineProps({
-  option: Object,
+  option: {
+    type: Object,
+    default: () => {
+      return {}
+    },
+  },
 })
 
 echarts.registerTheme('dark-chart', dark)
@@ -14,6 +20,7 @@ echarts.registerTheme('dark-chart', dark)
 const chartDom = ref<HTMLDivElement>()
 let chart: ECharts | null = null
 const isRealDark = ref(isDark.value)
+
 function resizeChart() {
   chart?.resize()
 }
@@ -38,8 +45,13 @@ function initChart() {
   }
 }
 
-watch(isRealDark, () => {
-  initChart()
+watch(isRealDark, (newValue) => {
+  if (chart) {
+    chart.setTheme(newValue ? 'dark-chart' : undefined)
+  }
+  else {
+    initChart()
+  }
 }, {
   flush: 'post',
 })
