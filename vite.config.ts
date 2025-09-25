@@ -18,9 +18,10 @@ export default ({ mode }: ConfigEnv): UserConfig => {
       port: 3000,
       proxy: {
         '/api': {
-          target: '',
+          target: '', // Your backend API base URL
           ws: false,
           changeOrigin: true,
+          rewrite: path => path.replace(/^\/api/, ''),
         },
       },
     },
