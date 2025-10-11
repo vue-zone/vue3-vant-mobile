@@ -54,13 +54,13 @@ async function login(values: any) {
 </script>
 
 <template>
-  <div class="m-x-a text-center w-7xl">
-    <div class="mb-32 mt-20">
-      <van-image :src="dark ? logoDark : logo" class="h-120 w-120" alt="brand logo" />
+  <div class="mx-auto p-3 text-center w-full">
+    <div class="mb-8 mt-2">
+      <van-image :src="dark ? logoDark : logo" class="h-30 w-30" alt="brand logo" />
     </div>
 
     <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="login">
-      <div class="rounded-3xl overflow-hidden">
+      <div class="rounded-md overflow-hidden">
         <van-field
           v-model="postData.email"
           :rules="rules.email"
@@ -69,7 +69,7 @@ async function login(values: any) {
         />
       </div>
 
-      <div class="mt-16 rounded-3xl overflow-hidden">
+      <div class="mt-4 rounded-md overflow-hidden">
         <van-field
           v-model="postData.password"
           type="password"
@@ -79,7 +79,7 @@ async function login(values: any) {
         />
       </div>
 
-      <div class="mt-16">
+      <div class="mt-4">
         <van-button
           :loading="loading"
           type="primary"
@@ -95,7 +95,7 @@ async function login(values: any) {
       {{ $t('login.signUp') }}
     </GhostButton>
 
-    <GhostButton block to="forgot-password">
+    <GhostButton block to="forgot-password" class="mt-2">
       {{ $t('login.forgotPassword') }}
     </GhostButton>
   </div>

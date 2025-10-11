@@ -73,9 +73,9 @@ async function getCode() {
 </script>
 
 <template>
-  <div class="m-x-a text-center w-7xl">
+  <div class="mx-auto p-3 text-center w-full">
     <van-form :model="postData" :rules="rules" validate-trigger="onSubmit" @submit="reset">
-      <div class="rounded-3xl overflow-hidden">
+      <div class="rounded-md overflow-hidden">
         <van-field
           v-model.trim="postData.email"
           :rules="rules.email"
@@ -84,7 +84,7 @@ async function getCode() {
         />
       </div>
 
-      <div class="mt-16 rounded-3xl overflow-hidden">
+      <div class="mt-4 rounded-md overflow-hidden">
         <van-field
           v-model.trim="postData.code"
           :rules="rules.code"
@@ -99,7 +99,7 @@ async function getCode() {
         </van-field>
       </div>
 
-      <div class="mt-16 rounded-3xl overflow-hidden">
+      <div class="mt-4 rounded-md overflow-hidden">
         <van-field
           v-model.trim="postData.password"
           type="password"
@@ -109,7 +109,7 @@ async function getCode() {
         />
       </div>
 
-      <div class="mt-16 rounded-3xl overflow-hidden">
+      <div class="mt-4 rounded-md overflow-hidden">
         <van-field
           v-model.trim="postData.confirmPassword"
           type="password"
@@ -119,7 +119,7 @@ async function getCode() {
         />
       </div>
 
-      <div class="mt-16">
+      <div class="mt-4">
         <van-button
           :loading="loading"
           type="primary"

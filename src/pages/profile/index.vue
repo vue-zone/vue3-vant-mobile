@@ -20,7 +20,7 @@ function login() {
     <VanCellGroup :inset="true">
       <van-cell center :is-link="!isLogin" @click="login">
         <template #title>
-          <van-image :src="userInfo.avatar || defaultAvatar" round class="h-56 w-56" />
+          <van-image :src="userInfo.avatar || defaultAvatar" round class="h-14 w-14" />
         </template>
 
         <template #value>
@@ -30,15 +30,15 @@ function login() {
       </van-cell>
     </VanCellGroup>
 
-    <VanCellGroup :inset="true" class="!mt-16">
+    <VanCellGroup :inset="true" class="!mt-4">
       <van-cell :title="$t('profile.settings')" icon="setting-o" is-link to="/settings">
         <template #icon>
-          <div class="i-carbon:settings text-gray-400 mr-5 self-center" />
+          <div class="i-carbon:settings text-gray-400 mr-2 self-center" />
         </template>
       </van-cell>
       <van-cell :title="$t('profile.docs')" is-link url="https://vue-zone.github.io/docs/vue3-vant-mobile/">
         <template #icon>
-          <div class="i-carbon:doc text-gray-400 mr-5 self-center" />
+          <div class="i-carbon:doc text-gray-400 mr-2 self-center" />
         </template>
       </van-cell>
     </VanCellGroup>
