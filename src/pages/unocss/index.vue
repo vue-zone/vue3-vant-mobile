@@ -1,13 +1,13 @@
 <template>
-  <h1 class="text-6xl color-pink font-semibold">
+  <h1 class="text-base color-pink font-semibold">
     {{ $t('unocss.title') }}
   </h1>
 
-  <p class="text-gray-700 mt-10 dark:text-white">
+  <p class="text-gray-700 mt-2 dark:text-white">
     {{ $t('unocss.description') }}
   </p>
 
-  <button class="btn mt-10">
+  <button class="btn mt-2">
     {{ $t('unocss.button') }}
   </button>
 </template>

@@ -23,7 +23,7 @@ function pull() {
     <VanEmpty v-else :description="$t('mock.noData')" />
   </div>
 
-  <van-space class="m-10" direction="vertical" fill>
+  <van-space class="m-2" direction="vertical" fill>
     <VanButton type="primary" round block @click="pull">
       {{ $t('mock.pull') }}
     </VanButton>

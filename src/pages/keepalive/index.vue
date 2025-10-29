@@ -7,7 +7,7 @@ const value = ref(0)
 </script>
 
 <template>
-  <div class="text-14 space-y-10">
+  <div class="text-sm space-y-2">
     <p>{{ $t('keepAlive.label') }}</p>
     <van-stepper v-model="value" />
   </div>
