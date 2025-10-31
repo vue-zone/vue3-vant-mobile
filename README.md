@@ -195,6 +195,7 @@ Your sponsorship will help us continue to iterate on this exciting project! 🚀
 <a href="https://github.com/wangpeng00544"><img src="https://avatars.githubusercontent.com/u/54630102?v=4" width="60px" alt="wangpeng00544" /></a>
 <a href="https://github.com/ljgx"><img src="https://avatars.githubusercontent.com/u/59424192?v=4" width="60px" alt="ljgx" /></a>
 <a href="https://github.com/3026546679"><img src="https://avatars.githubusercontent.com/u/36257162?v=4" width="60px" alt="3026546679" /></a>
+<a href="https://github.com/shuilong001"><img src="https://avatars.githubusercontent.com/u/219820297?v=4" width="60px" alt="shuilong001" /></a>
 </p>
 
 <h2 align="center">
