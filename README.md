@@ -176,7 +176,7 @@ We recommend that [issue](https://github.com/vue-zone/vue3-vant-mobile/issues) b
 
 ## Donation ☕
 
-[Buy Me a Coffee](https://github.com/CharleeWa/sponsor)
+[Buy Me a Coffee](https://github.com/cwandev/sponsor)
 
 <h2 align="center">💝 Our Sponsors 💝</h2>
 
@@ -207,7 +207,7 @@ Our contributors have made this project better. Thank you! 🙏
 </p>
 
 <p align="center">
-<a href="https://github.com/CharleeWa"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="CharleeWa" /></a>
+<a href="https://github.com/cwandev"><img src="https://avatars.githubusercontent.com/u/22477554?v=4" width="60px" alt="cwandev" /></a>
 <a href="https://github.com/ljt990218"><img src="https://avatars.githubusercontent.com/u/50509815?v=4" width="60px" alt="ljt990218" /></a>
 <a href="https://github.com/wswmsword"><img src="https://avatars.githubusercontent.com/u/26893092?v=4" width="60px" alt="wswmsword" /></a>
 <a href="https://github.com/weiq"><img src="https://avatars.githubusercontent.com/u/1697158?v=4" width="60px" alt="weiq" /></a>
