@@ -1,4 +1,4 @@
-import type { AxiosError, InternalAxiosRequestConfig } from 'axios'
+import type { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
 import { showNotify } from 'vant'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
@@ -61,11 +61,20 @@ function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosReques
 request.interceptors.request.use(requestHandler, errorHandler)
 
 // 响应拦截器
-function responseHandler(response: { data: any }) {
+function responseHandler(response: AxiosResponse) {
   return response.data
 }
 
 // Add a response interceptor
 request.interceptors.response.use(responseHandler, errorHandler)
 
-export default request
+interface RequestInstance extends AxiosInstance {
+  <T = any>(url: string, config?: AxiosRequestConfig): Promise<T>
+  <T = any>(config: AxiosRequestConfig): Promise<T>
+  get: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<T>
+  post: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<T>
+  put: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<T>
+  delete: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<T>
+}
+
+export default request as unknown as RequestInstance
