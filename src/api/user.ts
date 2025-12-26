@@ -1,5 +1,11 @@
 import request from '@/utils/request'
 
+export interface ApiResult<T> {
+  code: number
+  msg: string
+  data: T
+}
+
 export interface LoginData {
   email: string
   password: string
@@ -15,8 +21,8 @@ export interface UserState {
   avatar?: string
 }
 
-export function login(data: LoginData): Promise<any> {
-  return request.post<LoginRes>('/auth/login', data)
+export function login(data: LoginData) {
+  return request.post<ApiResult<LoginRes>>('/auth/login', data)
 }
 
 export function logout() {
@@ -24,7 +30,7 @@ export function logout() {
 }
 
 export function getUserInfo() {
-  return request<UserState>('/user/me')
+  return request<ApiResult<UserState>>('/user/me')
 }
 
 export function getEmailCode(): Promise<any> {
