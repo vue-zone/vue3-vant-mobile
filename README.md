@@ -129,9 +129,9 @@ An mobile web apps template based on the Vue 3 ecosystem.
 If you prefer to do it manually with the cleaner git history
 
 ```bash
-npx tiged vue-zone/vue3-vant-mobile my-mobile-app
+pnpm dlx tiged vue-zone/vue3-vant-mobile my-mobile-app # If you don't have pnpm installed, run: npm install -g pnpm
 cd my-mobile-app
-pnpm i # If you don't have pnpm installed, run: npm install -g pnpm
+pnpm i 
 ```
 
 ## Checklist
