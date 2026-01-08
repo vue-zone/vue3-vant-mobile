@@ -15,6 +15,7 @@ stats.html
 
 # Editor directories and files
 .idea
+.claude
 *.suo
 *.ntvs*
 *.njsproj
