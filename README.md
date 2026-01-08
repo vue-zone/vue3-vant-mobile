@@ -131,7 +131,7 @@ If you prefer to do it manually with the cleaner git history
 ```bash
 pnpm dlx tiged vue-zone/vue3-vant-mobile my-mobile-app # If you don't have pnpm installed, run: npm install -g pnpm
 cd my-mobile-app
-pnpm i 
+pnpm i
 ```
 
 ## Checklist
@@ -232,6 +232,7 @@ Our contributors have made this project better. Thank you! 🙏
 <a href="https://github.com/xuxichen"><img src="https://avatars.githubusercontent.com/u/18108140?v=4" width="60px" alt="xuxichen" /></a>
 <a href="https://github.com/1411430556"><img src="https://avatars.githubusercontent.com/u/67215517?v=4" width="60px" alt="1411430556" /></a>
 <a href="https://github.com/Jiangmenghao"><img src="https://avatars.githubusercontent.com/u/24779280?v=4" width="60px" alt="Jiangmenghao" /></a>
+<a href="https://github.com/XingXiaoWu"><img src="https://avatars.githubusercontent.com/u/22769131?v=4" width="60px" alt="Jiangmenghao" /></a>
 </p>
 
 ## License
