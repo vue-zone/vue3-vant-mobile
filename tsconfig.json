@@ -13,7 +13,6 @@
     },
     "types": [
       "node",
-      "unplugin-vue-router/client",
       "vite-plugin-pwa/client",
       "@intlify/unplugin-vue-i18n/messages"
     ],
@@ -36,6 +35,6 @@
     "src/**/*.vue",
     "src/types/components.d.ts",
     "src/types/auto-imports.d.ts",
-    "src/types/typed-router.d.ts"
+    "src/types/route-map.d.ts"
   ]
 }
