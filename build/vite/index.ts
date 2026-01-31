@@ -8,8 +8,8 @@ import UnoCSS from 'unocss/vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import { VantResolver } from '@vant/auto-import-resolver'
 import Components from 'unplugin-vue-components/vite'
-import { VueRouterAutoImports } from 'unplugin-vue-router'
-import VueRouter from 'unplugin-vue-router/vite'
+import { VueRouterAutoImports } from 'vue-router/unplugin'
+import VueRouter from 'vue-router/vite'
 import { mockDevServerPlugin } from 'vite-plugin-mock-dev-server'
 import { VitePWA } from 'vite-plugin-pwa'
 import Sitemap from 'vite-plugin-sitemap'
@@ -22,11 +22,10 @@ export function createVitePlugins(mode: string) {
   const env = loadEnv(mode, process.cwd())
 
   return [
-    // https://github.com/posva/unplugin-vue-router
     VueRouter({
       extensions: ['.vue'],
       routesFolder: 'src/pages',
-      dts: 'src/types/typed-router.d.ts',
+      dts: 'src/types/route-map.d.ts',
     }),
 
     vue(),
