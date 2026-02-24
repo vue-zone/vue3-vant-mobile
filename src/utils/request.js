@@ -1,4 +1,3 @@
-import type { AxiosError, AxiosInstance, AxiosRequestConfig, AxiosResponse, InternalAxiosRequestConfig } from 'axios'
 import axios from 'axios'
 import { showNotify } from 'vant'
 import { STORAGE_TOKEN_KEY } from '@/stores/mutation-type'
@@ -16,14 +15,8 @@ const request = axios.create({
   timeout: 6000, // 请求超时时间
 })
 
-export type RequestError = AxiosError<{
-  message?: string
-  result?: any
-  errorMessage?: string
-}>
-
 // 异常拦截处理器
-function errorHandler(error: RequestError): Promise<any> {
+function errorHandler(error) {
   if (error.response) {
     const { data = {}, status, statusText } = error.response
     // 403 无权限
@@ -47,7 +40,7 @@ function errorHandler(error: RequestError): Promise<any> {
 }
 
 // 请求拦截器
-function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosRequestConfig | Promise<InternalAxiosRequestConfig> {
+function requestHandler(config) {
   const savedToken = localStorage.getItem(STORAGE_TOKEN_KEY)
   // 如果 token 存在
   // 让每个请求携带自定义 token, 请根据实际情况修改
@@ -61,20 +54,11 @@ function requestHandler(config: InternalAxiosRequestConfig): InternalAxiosReques
 request.interceptors.request.use(requestHandler, errorHandler)
 
 // 响应拦截器
-function responseHandler(response: AxiosResponse) {
+function responseHandler(response) {
   return response.data
 }
 
 // Add a response interceptor
 request.interceptors.response.use(responseHandler, errorHandler)
 
-interface RequestInstance extends AxiosInstance {
-  <T = any>(url: string, config?: AxiosRequestConfig): Promise<T>
-  <T = any>(config: AxiosRequestConfig): Promise<T>
-  get: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<T>
-  post: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<T>
-  put: <T = any>(url: string, data?: any, config?: AxiosRequestConfig) => Promise<T>
-  delete: <T = any>(url: string, config?: AxiosRequestConfig) => Promise<T>
-}
-
-export default request as unknown as RequestInstance
+export default request

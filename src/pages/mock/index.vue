@@ -1,7 +1,7 @@
-<script setup lang="ts">
+<script setup>
 import { queryProse } from '@/api'
 
-const messages = ref<string>('')
+const messages = ref('')
 
 function pull() {
   queryProse().then(({ code, result }) => {

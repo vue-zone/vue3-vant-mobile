@@ -4,7 +4,6 @@ import { handleHotUpdate, routes } from 'vue-router/auto-routes'
 import NProgress from 'nprogress'
 import 'nprogress/nprogress.css'
 
-import type { EnhancedRouteLocation } from './types'
 import { useRouteCacheStore, useUserStore } from '@/stores'
 
 import { isLogin } from '@/utils/auth'
@@ -21,7 +20,7 @@ const router = createRouter({
 if (import.meta.hot)
   handleHotUpdate(router)
 
-router.beforeEach(async (to: EnhancedRouteLocation) => {
+router.beforeEach(async (to) => {
   NProgress.start()
 
   const routeCacheStore = useRouteCacheStore()

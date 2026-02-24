@@ -1,5 +1,4 @@
-<script setup lang="ts">
-import type { PickerColumn } from 'vant'
+<script setup>
 import { languageColumns, locale } from '@/utils/i18n'
 
 const { t } = useI18n()
@@ -20,11 +19,11 @@ const menuItems = computed(() => ([
 ]))
 
 const showLanguagePicker = ref(false)
-const languageValues = ref<Array<string>>([locale.value])
+const languageValues = ref([locale.value])
 const language = computed(() => languageColumns.find(l => l.value === locale.value).text)
 
-function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
-  locale.value = event.selectedOptions[0].value as string
+function onLanguageConfirm(event) {
+  locale.value = event.selectedOptions[0].value
   showLanguagePicker.value = false
 }
 </script>

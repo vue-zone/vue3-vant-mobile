@@ -17,7 +17,7 @@ const maxWidth = 600
  * 限制大小的 vw 转换
  * @param {number} n
  */
-export default function vw(n: number) {
+export default function vw(n) {
   if (n === 0)
     return n
 

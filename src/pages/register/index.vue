@@ -1,6 +1,5 @@
-<script setup lang="ts">
+<script setup>
 import { useRouter } from 'vue-router'
-import type { FieldRule } from 'vant'
 import { showNotify } from 'vant'
 import { useUserStore } from '@/stores'
 import vw from '@/utils/inline-px-to-vw'
@@ -18,7 +17,7 @@ const postData = reactive({
   confirmPassword: '',
 })
 
-const validatorPassword = (val: string) => val === postData.password
+const validatorPassword = val => val === postData.password
 
 const rules = reactive({
   email: [
@@ -36,7 +35,7 @@ const rules = reactive({
   confirmPassword: [
     { required: true, message: t('register.pleaseEnterConfirmPassword') },
     { required: true, validator: validatorPassword, message: t('register.passwordsDoNotMatch') },
-  ] as FieldRule[],
+  ],
 })
 
 async function register() {

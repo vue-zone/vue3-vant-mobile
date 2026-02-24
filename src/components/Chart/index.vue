@@ -1,6 +1,5 @@
-<script setup lang="ts">
+<script setup>
 import { onMounted, onUnmounted, ref, watch } from 'vue'
-import type { ECharts } from 'echarts'
 import * as echarts from 'echarts'
 import { debounce } from 'lodash-es'
 import { addListener, removeListener } from 'resize-detector'
@@ -17,8 +16,8 @@ const props = defineProps({
 
 echarts.registerTheme('dark-chart', dark)
 
-const chartDom = ref<HTMLDivElement>()
-let chart: ECharts | null = null
+const chartDom = ref()
+let chart = null
 const isRealDark = ref(isDark.value)
 
 function resizeChart() {

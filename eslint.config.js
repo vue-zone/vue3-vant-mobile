@@ -3,7 +3,6 @@ import antfu from '@antfu/eslint-config'
 export default antfu(
   {
     vue: true,
-    typescript: true,
 
     // Enable UnoCSS support
     // https://unocss.dev/integrations/vscode
@@ -20,6 +19,7 @@ export default antfu(
   {
     ignores: [
       '.github/**',
+      'CLAUDE.md',
     ],
   },
 )

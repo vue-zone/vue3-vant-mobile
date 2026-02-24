@@ -18,14 +18,14 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { loadEnv } from 'vite'
 import { createViteVConsole } from './vconsole'
 
-export function createVitePlugins(mode: string) {
+export function createVitePlugins(mode) {
   const env = loadEnv(mode, process.cwd())
 
   return [
     VueRouter({
       extensions: ['.vue'],
       routesFolder: 'src/pages',
-      dts: 'src/types/route-map.d.ts',
+      dts: false,
     }),
 
     vue(),
@@ -43,7 +43,7 @@ export function createVitePlugins(mode: string) {
       extensions: ['vue'],
       resolvers: [VantResolver()],
       include: [/\.vue$/, /\.vue\?vue/],
-      dts: 'src/types/components.d.ts',
+      dts: false,
     }),
 
     // https://github.com/antfu/unplugin-auto-import
@@ -64,7 +64,7 @@ export function createVitePlugins(mode: string) {
         },
         unheadVueComposablesImports,
       ],
-      dts: 'src/types/auto-imports.d.ts',
+      dts: false,
       dirs: [
         'src/composables',
       ],
@@ -82,7 +82,7 @@ export function createVitePlugins(mode: string) {
     }),
 
     // https://github.com/antfu/unocss
-    // see uno.config.ts for config
+    // see uno.config.js for config
     UnoCSS(),
 
     // https://github.com/vadxq/vite-plugin-vconsole

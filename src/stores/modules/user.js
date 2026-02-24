@@ -1,5 +1,4 @@
 import { defineStore } from 'pinia'
-import type { LoginData, UserState } from '@/api/user'
 import { clearToken, setToken } from '@/utils/auth'
 
 import {
@@ -18,14 +17,14 @@ const InitUserInfo = {
 }
 
 export const useUserStore = defineStore('user', () => {
-  const userInfo = ref<UserState>({ ...InitUserInfo })
+  const userInfo = ref({ ...InitUserInfo })
 
   // Set user's information
-  const setInfo = (partial: Partial<UserState>) => {
+  const setInfo = (partial) => {
     userInfo.value = { ...partial }
   }
 
-  const login = async (loginForm: LoginData) => {
+  const login = async (loginForm) => {
     try {
       const { data } = await userLogin(loginForm)
       setToken(data.token)

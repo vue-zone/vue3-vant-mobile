@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { storeToRefs } from 'pinia'
 import { useCounterStore } from '@/stores'
 

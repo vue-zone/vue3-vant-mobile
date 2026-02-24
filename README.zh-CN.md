@@ -46,7 +46,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 📥 [API 自动加载](https://github.com/antfu/unplugin-auto-import) - 直接使用 Composition API 无需引入
 
-- 💪 TypeScript, 当然
+- 💪 JavaScript, 当然
 
 - 💾 [本地数据模拟](https://github.com/pengzhanbo/vite-plugin-mock-dev-server)的支持
 
@@ -102,7 +102,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ### 开发工具
 
-- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [pnpm](https://pnpm.js.org/) - 快, 节省磁盘空间的包管理器
 - [Netlify](https://www.netlify.com/) - 零配置的部署
 - [VS Code Extensions](./.vscode/extensions.json)
@@ -139,7 +139,7 @@ pnpm i
 
 - [ ] 在 `LICENSE` 中改变作者名
 - [ ] 在 `index.html` 中改变标题
-- [ ] 在 `vite.config.ts` 更改主机名
+- [ ] 在 `vite.config.js` 更改主机名
 - [ ] 在 `public` 目录下改变favicon
 - [ ] 整理 README 并删除路由
 

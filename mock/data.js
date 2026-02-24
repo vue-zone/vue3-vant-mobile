@@ -1,6 +1,6 @@
 import { defineMockData } from 'vite-plugin-mock-dev-server'
 
-// defineMockData，用于在 mock 文件中使用 data.ts 作为共享数据源。
+// defineMockData，用于在 mock 文件中使用 data.js 作为共享数据源。
 export default defineMockData('proses', [
   '🔖 躲在某一时间，想念一段时光的掌纹;躲在某一地点，想念一个站在来路也站在去路的，让我牵挂的人。',
   '🔖 天空一碧如洗，灿烂的阳光正从密密的松针的缝隙间射下来，形成一束束粗粗细细的光柱，把飘荡着轻纱般薄雾的林荫照得通亮。',

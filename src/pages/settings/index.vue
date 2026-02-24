@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { showConfirmDialog } from 'vant'
 import router from '@/router'
 import { useUserStore } from '@/stores'

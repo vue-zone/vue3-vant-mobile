@@ -46,7 +46,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 - 📥 [APIs auto importing](https://github.com/antfu/unplugin-auto-import) - use Composition API and others directly
 
-- 💪 TypeScript, of course
+- 💪 JavaScript, of course
 
 - 💾 [Mock](https://github.com/pengzhanbo/vite-plugin-mock-dev-server) server Support
 
@@ -102,7 +102,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ### Dev tools
 
-- [TypeScript](https://www.typescriptlang.org/)
+- [JavaScript](https://developer.mozilla.org/docs/Web/JavaScript)
 - [pnpm](https://pnpm.js.org/) - fast, disk space efficient package manager
 - [Netlify](https://www.netlify.com/) - zero-config deployment
 - [VS Code Extensions](./.vscode/extensions.json)
@@ -139,7 +139,7 @@ When you use this template, try follow the checklist to update your info properl
 
 - [ ] Change the author name in `LICENSE`
 - [ ] Change the title in `index.html`
-- [ ] Change the hostname in `vite.config.ts`
+- [ ] Change the hostname in `vite.config.js`
 - [ ] Change the favicon in `public`
 - [ ] Clean up the READMEs and remove routes
 

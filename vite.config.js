@@ -1,11 +1,10 @@
 import path from 'node:path'
 import process from 'node:process'
 import { loadEnv } from 'vite'
-import type { ConfigEnv, UserConfig } from 'vite'
 import { createVitePlugins } from './build/vite'
 import { exclude, include } from './build/vite/optimize'
 
-export default ({ mode }: ConfigEnv): UserConfig => {
+export default ({ mode }) => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
 

@@ -3,10 +3,10 @@ import process from 'node:process'
 import { loadEnv } from 'vite'
 import { viteVConsole } from 'vite-plugin-vconsole'
 
-export function createViteVConsole(mode: string) {
+export function createViteVConsole(mode) {
   const env = loadEnv(mode, process.cwd())
   return viteVConsole({
-    entry: [path.resolve('src/main.ts')],
+    entry: [path.resolve('src/main.js')],
     enabled: env.VITE_APP_VCONSOLE === 'true',
     config: {
       maxLogNumber: 1000,

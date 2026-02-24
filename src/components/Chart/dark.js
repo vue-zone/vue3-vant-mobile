@@ -36,7 +36,7 @@ const colorPalette = [
   '#8d48e3',
   '#dd79ff',
 ]
-const theme: any = {
+const theme = {
   color: colorPalette,
   backgroundColor,
   axisPointer: {

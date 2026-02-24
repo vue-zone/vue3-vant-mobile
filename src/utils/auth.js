@@ -11,7 +11,7 @@ function getToken() {
   return token.value
 }
 
-function setToken(newToken: string) {
+function setToken(newToken) {
   token.value = newToken
 }
 

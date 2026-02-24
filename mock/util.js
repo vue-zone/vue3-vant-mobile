@@ -1,11 +1,11 @@
 const responseBody = {
   message: '',
   timestamp: 0,
-  result: null as unknown,
+  result: null,
   code: 0,
 }
 
-export function builder(data: unknown, message = 'success', code = 0) {
+export function builder(data, message = 'success', code = 0) {
   responseBody.result = data
 
   if (message !== undefined && message !== null)

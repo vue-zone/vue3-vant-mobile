@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import { rootRouteList } from '@/config/routes'
 
 const route = useRoute()

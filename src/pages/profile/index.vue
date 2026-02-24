@@ -1,4 +1,4 @@
-<script setup lang="ts">
+<script setup>
 import router from '@/router'
 import { useUserStore } from '@/stores'
 import defaultAvatar from '@/assets/images/default-avatar.svg'

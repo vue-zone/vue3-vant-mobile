@@ -1,6 +1,5 @@
-<script setup lang="ts">
+<script setup>
 import { useRouter } from 'vue-router'
-import type { RouteMap } from 'vue-router'
 import { useUserStore } from '@/stores'
 
 import logo from '~/images/logo.svg'
@@ -12,7 +11,7 @@ const router = useRouter()
 const userStore = useUserStore()
 const loading = ref(false)
 
-const dark = ref<boolean>(isDark.value)
+const dark = ref(isDark.value)
 
 watch(
   () => isDark.value,
@@ -35,13 +34,13 @@ const rules = reactive({
   ],
 })
 
-async function login(values: any) {
+async function login(values) {
   try {
     loading.value = true
     await userStore.login({ ...postData, ...values })
     const { redirect, ...othersQuery } = router.currentRoute.value.query
     router.push({
-      name: (redirect as keyof RouteMap) || 'Home',
+      name: redirect || 'Home',
       query: {
         ...othersQuery,
       },
