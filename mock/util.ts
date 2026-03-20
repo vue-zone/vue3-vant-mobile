@@ -14,6 +14,6 @@ export function builder(data: unknown, message = 'success', code = 0) {
   if (code !== undefined && code !== 0)
     responseBody.code = code
 
-  responseBody.timestamp = new Date().getTime()
+  responseBody.timestamp = Date.now()
   return responseBody
 }

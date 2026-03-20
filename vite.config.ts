@@ -5,6 +5,8 @@ import type { ConfigEnv, UserConfig } from 'vite'
 import { createVitePlugins } from './build/vite'
 import { exclude, include } from './build/vite/optimize'
 
+const API_PREFIX_RE = /^\/api/
+
 export default ({ mode }: ConfigEnv): UserConfig => {
   const root = process.cwd()
   const env = loadEnv(mode, root)
@@ -21,7 +23,7 @@ export default ({ mode }: ConfigEnv): UserConfig => {
           target: '', // Your backend API base URL
           ws: false,
           changeOrigin: true,
-          rewrite: path => path.replace(/^\/api/, ''),
+          rewrite: requestPath => requestPath.replace(API_PREFIX_RE, ''),
         },
       },
     },

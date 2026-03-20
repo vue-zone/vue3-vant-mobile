@@ -28,7 +28,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ## Features
 
-- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 7](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/), [esbuild](https://github.com/evanw/esbuild) - born with fastness
+- ⚡️ [Vue 3](https://github.com/vuejs/core), [Vite 8](https://github.com/vitejs/vite), [pnpm](https://pnpm.io/) - born with fastness
 
 - 🗂 [File based routing](./src/router)
 
@@ -117,7 +117,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ## Try it now
 
-> vue3-vant-mobile requires Node 20+
+> vue3-vant-mobile requires Node 20.19+
 
 ### GitHub Template
 

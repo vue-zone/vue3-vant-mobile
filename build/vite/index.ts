@@ -18,6 +18,13 @@ import VueI18nPlugin from '@intlify/unplugin-vue-i18n/vite'
 import { loadEnv } from 'vite'
 import { createViteVConsole } from './vconsole'
 
+const VUE_COMPONENT_INCLUDE = [/\.vue$/, /\.vue\?vue/]
+const AUTO_IMPORT_INCLUDE = [
+  /\.[tj]sx?$/,
+  /\.vue$/,
+  /\.vue\?vue/,
+]
+
 export function createVitePlugins(mode: string) {
   const env = loadEnv(mode, process.cwd())
 
@@ -42,17 +49,13 @@ export function createVitePlugins(mode: string) {
     Components({
       extensions: ['vue'],
       resolvers: [VantResolver()],
-      include: [/\.vue$/, /\.vue\?vue/],
+      include: VUE_COMPONENT_INCLUDE,
       dts: 'src/types/components.d.ts',
     }),
 
     // https://github.com/antfu/unplugin-auto-import
     AutoImport({
-      include: [
-        /\.[tj]sx?$/,
-        /\.vue$/,
-        /\.vue\?vue/,
-      ],
+      include: AUTO_IMPORT_INCLUDE,
       imports: [
         'vue',
         '@vueuse/core',

@@ -33,7 +33,7 @@ onBeforeRouteLeave(() => {
 })
 ```
 
-# Handling a Specific Scroll Container
+## Handling a Specific Scroll Container
 
 If you need to save and restore the scroll position for a specific element (instead of the entire window), follow these steps:
 
