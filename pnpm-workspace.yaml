@@ -1,0 +1,10 @@
+shamefullyHoist: true
+
+shellEmulator: true
+
+trustPolicy: no-downgrade
+
+allowBuilds:
+  core-js: true
+  esbuild: true
+  simple-git-hooks: true

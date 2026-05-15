@@ -117,7 +117,7 @@ An mobile web apps template based on the Vue 3 ecosystem.
 
 ## 现在可以试试
 
-> vue3-vant-mobile 需要 Node 版本 20.19+
+> vue3-vant-mobile 需要 Node 版本 22.22.0+
 
 ### GitHub 模板
 
