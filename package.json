@@ -2,7 +2,7 @@
   "name": "vue3-vant-mobile",
   "type": "module",
   "version": "3.15.0",
-  "packageManager": "pnpm@11.1.1",
+  "packageManager": "pnpm@11.4.0",
   "description": "An mobile web apps template based on the Vue 3 ecosystem",
   "license": "MIT",
   "engines": {
@@ -75,7 +75,7 @@
     "vue-tsc": "^3.2.9"
   },
   "resolutions": {
-    "vite": "^8.0.12"
+    "vite": "^8.0.14"
   },
   "simple-git-hooks": {
     "pre-commit": "pnpm lint-staged",
