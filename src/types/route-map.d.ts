@@ -20,9 +20,9 @@ import type {
 
 declare module 'vue-router' {
   interface TypesConfig {
-    ParamParsers:
-      | never
+    _ParamParsers: {}
     RouteNamedMap: import('vue-router/auto-routes').RouteNamedMap
+    _RouteFileInfoMap: import('vue-router/auto-routes')._RouteFileInfoMap
   }
 }
 
@@ -140,17 +140,23 @@ declare module 'vue-router/auto-routes' {
         | 'Home'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/[...all].vue': {
       routes:
         | '404'
       views:
         | never
+      pathParamNames:
+        | 'all'
     }
     'src/pages/charts/index.vue': {
       routes:
         | 'Charts'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'src/pages/counter/index.vue': {
@@ -158,11 +164,15 @@ declare module 'vue-router/auto-routes' {
         | 'Counter'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/forgot-password/index.vue': {
       routes:
         | 'ForgotPassword'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'src/pages/keepalive/index.vue': {
@@ -170,11 +180,15 @@ declare module 'vue-router/auto-routes' {
         | 'KeepAlive'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/login/index.vue': {
       routes:
         | 'Login'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'src/pages/mock/index.vue': {
@@ -182,11 +196,15 @@ declare module 'vue-router/auto-routes' {
         | 'Mock'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/profile/index.vue': {
       routes:
         | 'Profile'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'src/pages/register/index.vue': {
@@ -194,11 +212,15 @@ declare module 'vue-router/auto-routes' {
         | 'Register'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/scroll-cache/index.vue': {
       routes:
         | 'ScrollCache'
       views:
+        | never
+      pathParamNames:
         | never
     }
     'src/pages/settings/index.vue': {
@@ -206,11 +228,15 @@ declare module 'vue-router/auto-routes' {
         | 'Settings'
       views:
         | never
+      pathParamNames:
+        | never
     }
     'src/pages/unocss/index.vue': {
       routes:
         | 'UnoCSS'
       views:
+        | never
+      pathParamNames:
         | never
     }
   }
