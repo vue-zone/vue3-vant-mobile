@@ -1,0 +1,133 @@
+{
+  "app": {
+    "name": "Vue3 Vant Mobile",
+    "description": "Vue 3 생태계 기반의 모바일 웹 앱 템플릿"
+  },
+
+  "navbar": {
+    "Home": "홈",
+    "Profile": "프로필",
+    "Mock": "🗂️ Mock",
+    "Charts": "📊 차트",
+    "UnoCSS": "⚡ UnoCSS",
+    "Counter": "🍍 상태 유지",
+    "KeepAlive": "♻️ 페이지 캐시",
+    "ScrollCache": "📍 스크롤 캐시",
+    "Login": "🧑‍💻 로그인",
+    "Register": "🧑‍💻 회원가입",
+    "ForgotPassword": "❓ 비밀번호 찾기",
+    "Settings": "⚙️ 설정",
+    "404": "⚠️ 404 페이지",
+    "Undefined": "🤷 제목 없음"
+  },
+
+  "tabbar": {
+    "home": "홈",
+    "profile": "프로필"
+  },
+
+  "home": {
+    "darkMode": "🌗 다크 모드",
+    "language": "📚 언어",
+    "settings": "설정",
+    "examples": "예제"
+  },
+
+  "profile": {
+    "login": "로그인",
+    "settings": "설정",
+    "docs": "문서"
+  },
+
+  "mock": {
+    "fromAsyncData": "비동기 요청으로 받은 데이터",
+    "noData": "데이터 없음",
+    "pull": "요청",
+    "reset": "초기화"
+  },
+
+  "charts": {
+    "January": "1월",
+    "February": "2월",
+    "March": "3월",
+    "April": "4월",
+    "May": "5월",
+    "June": "6월"
+  },
+
+  "counter": {
+    "description": "이 카운터의 상태는 Pinia를 통해 유지됩니다. 페이지를 새로고침하여 확인해 보세요."
+  },
+
+  "unocss": {
+    "title": "안녕하세요, Unocss!",
+    "description": "Unocss 사용 예제입니다.",
+    "button": "버튼"
+  },
+
+  "keepAlive": {
+    "label": "현재 컴포넌트는 캐시됩니다"
+  },
+
+  "scrollCache": {
+    "sectionTitle": "섹션 제목",
+    "sectionText": "섹션 내용 섹션 내용 섹션 내용 섹션 내용 섹션 내용 섹션 내용",
+    "finished": "마지막까지 도달했습니다 ~",
+    "loading": "로딩 중..."
+  },
+
+  "login": {
+    "login": "로그인",
+    "logout": "로그아웃",
+    "email": "이메일",
+    "password": "비밀번호",
+    "pleaseEnterEmail": "이메일을 입력해 주세요",
+    "pleaseEnterPassword": "비밀번호를 입력해 주세요",
+    "signUp": "회원가입하기",
+    "forgotPassword": "비밀번호를 잊으셨나요?"
+  },
+
+  "forgotPassword": {
+    "email": "이메일",
+    "code": "인증 코드",
+    "password": "비밀번호",
+    "confirmPassword": "비밀번호 재입력",
+    "pleaseEnterEmail": "이메일을 입력해 주세요",
+    "pleaseEnterCode": "인증 코드를 입력해 주세요",
+    "pleaseEnterPassword": "비밀번호를 입력해 주세요",
+    "pleaseEnterConfirmPassword": "비밀번호를 다시 입력해 주세요",
+    "passwordsDoNotMatch": "비밀번호가 일치하지 않습니다",
+    "confirm": "확인",
+    "backToLogin": "로그인으로 돌아가기",
+    "getCode": "인증 코드 받기",
+    "gettingCode": "전송 중",
+    "sendCodeSuccess": "전송되었습니다. 인증 코드는",
+    "passwordResetSuccess": "비밀번호가 재설정되었습니다"
+  },
+
+  "register": {
+    "email": "이메일",
+    "code": "인증 코드",
+    "nickname": "닉네임",
+    "password": "비밀번호",
+    "confirmPassword": "비밀번호 재입력",
+    "pleaseEnterEmail": "이메일을 입력해 주세요",
+    "pleaseEnterCode": "인증 코드를 입력해 주세요",
+    "pleaseEnterNickname": "닉네임을 입력해 주세요",
+    "pleaseEnterPassword": "비밀번호를 입력해 주세요",
+    "pleaseEnterConfirmPassword": "비밀번호를 다시 입력해 주세요",
+    "passwordsDoNotMatch": "비밀번호가 일치하지 않습니다",
+    "confirm": "확인",
+    "backToLogin": "로그인으로 돌아가기",
+    "getCode": "인증 코드 받기",
+    "gettingCode": "전송 중",
+    "sendCodeSuccess": "전송되었습니다. 인증 코드는",
+    "registerSuccess": "회원가입이 완료되었습니다"
+  },
+
+  "settings": {
+    "logout": "로그아웃",
+    "currentVersion": "현재 버전",
+    "confirmTitle": "종료하시겠습니까?"
+  }
+}
