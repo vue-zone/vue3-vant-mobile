@@ -12,9 +12,13 @@ trustPolicyExclude:
 overrides:
   source-map: ^0.7.6
 
+updateConfig:
+  ignoreDependencies:
+    - typescript
+
 peerDependencyRules:
   allowedVersions:
-    vite: ^8.0.14
+    vite: ^8.1.4
 
 allowBuilds:
   core-js: true
