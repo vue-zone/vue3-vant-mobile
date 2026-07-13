@@ -232,6 +232,7 @@ pnpm build
 <a href="https://github.com/1411430556"><img src="https://avatars.githubusercontent.com/u/67215517?v=4" width="60px" alt="1411430556" /></a>
 <a href="https://github.com/Jiangmenghao"><img src="https://avatars.githubusercontent.com/u/24779280?v=4" width="60px" alt="Jiangmenghao" /></a>
 <a href="https://github.com/XingXiaoWu"><img src="https://avatars.githubusercontent.com/u/22769131?v=4" width="60px" alt="Jiangmenghao" /></a>
+<a href="https://github.com/moduvoice"><img src="https://avatars.githubusercontent.com/u/291867022?v=4" width="60px" alt="moduvoice" /></a>
 </p>
 
 ## License
