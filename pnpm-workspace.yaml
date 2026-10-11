@@ -1,20 +1,19 @@
+minimumReleaseAgeExcludePrune: true
 minimumReleaseAgeExclude:
-  - vite@8.2.0
-
-shamefullyHoist: true
-
-shellEmulator: true
+  - vite
 
 trustPolicy: no-downgrade
-
 trustPolicyExclude:
   - tinyexec@1.2.2
   - 'semver@6.3.1 || 5.7.2'
   - '@trickfilm400/rollup-plugin-off-main-thread@3.0.0-pre1'
 
+shamefullyHoist: true
+shellEmulator: true
+
 overrides:
   source-map: ^0.7.6
-  vite: ^8.2.0
+  vite: ^8.3.4
 
 updateConfig:
   ignoreDependencies:
