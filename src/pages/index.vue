@@ -1,8 +1,17 @@
 <script setup lang="ts">
 import type { PickerColumn } from 'vant'
 import { languageColumns, locale } from '@/utils/i18n'
+import { useThemeStore } from '@/stores'
 
 const { t } = useI18n()
+const themeStore = useThemeStore()
+const showThemePicker = ref(false)
+const router = useRouter()
+
+function onPreviewTheme() {
+  showThemePicker.value = false
+  router.push('/theme-preview')
+}
 
 const checked = computed({
   get: () => isDark.value,
@@ -10,6 +19,7 @@ const checked = computed({
 })
 
 const menuItems = computed(() => ([
+  { title: t('navbar.ThemePreview'), route: 'theme-preview' },
   { title: t('navbar.Mock'), route: 'mock' },
   { title: t('navbar.Charts'), route: 'charts' },
   { title: t('navbar.UnoCSS'), route: 'unocss' },
@@ -43,6 +53,20 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
 
     <van-cell
       is-link
+      center
+      :title="$t('home.theme')"
+      @click="showThemePicker = true"
+    >
+      <template #value>
+        <div class="flex gap-2 items-center justify-end">
+          <span>{{ $t(`theme.${themeStore.themeKey}`) }}</span>
+          <span class="theme-dot" :style="{ background: themeStore.current.seed }" />
+        </div>
+      </template>
+    </van-cell>
+
+    <van-cell
+      is-link
       :title="$t('home.language')"
       :value="language"
       @click="showLanguagePicker = true"
@@ -55,6 +79,20 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
     </template>
   </van-cell-group>
 
+  <van-popup
+    v-model:show="showThemePicker"
+    position="bottom"
+    round
+    :style="{ maxHeight: '85%' }"
+  >
+    <theme-picker />
+    <div class="px-4 pb-6">
+      <van-button type="primary" round block @click="onPreviewTheme">
+        {{ $t('theme.preview') }}
+      </van-button>
+    </div>
+  </van-popup>
+
   <van-popup v-model:show="showLanguagePicker" position="bottom">
     <van-picker
       v-model="languageValues"
@@ -64,6 +102,14 @@ function onLanguageConfirm(event: { selectedOptions: PickerColumn }) {
     />
   </van-popup>
 </template>
+
+<style scoped>
+.theme-dot {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
+</style>
 
 <route lang="json5">
 {

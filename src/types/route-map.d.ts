@@ -115,6 +115,13 @@ declare module 'vue-router/auto-routes' {
       Record<never, never>,
       | never
     >,
+    'ThemePreview': RouteRecordInfo<
+      'ThemePreview',
+      '/theme-preview',
+      Record<never, never>,
+      Record<never, never>,
+      | never
+    >,
     'UnoCSS': RouteRecordInfo<
       'UnoCSS',
       '/unocss',
@@ -226,6 +233,14 @@ declare module 'vue-router/auto-routes' {
     'src/pages/settings/index.vue': {
       routes:
         | 'Settings'
+      views:
+        | never
+      pathParamNames:
+        | never
+    }
+    'src/pages/theme-preview/index.vue': {
+      routes:
+        | 'ThemePreview'
       views:
         | never
       pathParamNames:

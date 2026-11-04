@@ -7,6 +7,7 @@
   "navbar": {
     "Home": "홈",
     "Profile": "프로필",
+    "ThemePreview": "🎨 테마 미리보기",
     "Mock": "🗂️ Mock",
     "Charts": "📊 차트",
     "UnoCSS": "⚡ UnoCSS",
@@ -28,9 +29,60 @@
 
   "home": {
     "darkMode": "🌗 다크 모드",
+    "theme": "🎨 테마 색상",
     "language": "📚 언어",
     "settings": "설정",
     "examples": "예제"
+  },
+
+  "theme": {
+    "seed": "기준 색상",
+    "roles": "색상 역할",
+    "purple": "바이올렛",
+    "blue": "오션",
+    "green": "포레스트",
+    "rose": "로즈",
+    "orange": "앰버",
+    "teal": "틸",
+    "jade": "비취",
+    "red": "크림슨",
+    "slate": "슬레이트",
+    "preview": "미리보기"
+  },
+
+  "themePreview": {
+    "primary": "기본",
+    "plain": "플레인",
+    "round": "둥근",
+    "loading": "로딩 중...",
+    "default": "기본값",
+    "disabled": "비활성",
+    "block": "블록 버튼",
+    "notice": "홈 설정에서 테마 색상을 바꾸면 모든 컴포넌트가 따라 바뀝니다.",
+    "form": "폼",
+    "input": "입력",
+    "placeholder": "내용을 입력하세요",
+    "switch": "스위치",
+    "tab": "탭",
+    "tabContent": "탭 {n}의 내용",
+    "photo": "사진",
+    "chat": "메시지",
+    "favorite": "즐겨찾기",
+    "setting": "설정",
+    "step1": "주문",
+    "step2": "배송",
+    "step3": "수령",
+    "collapse": "패널 {n}",
+    "collapseContent": "접기 패널 내용입니다. 제목을 눌러 펼치거나 접을 수 있습니다.",
+    "feedback": "피드백",
+    "success": "성공",
+    "notify": "알림 메시지입니다",
+    "option": "옵션 {n}",
+    "cancel": "취소",
+    "dialogTitle": "안내",
+    "dialogMessage": "확인 대화상자입니다.",
+    "empty": "내용이 없습니다",
+    "retry": "다시 불러오기"
   },
 
   "profile": {
