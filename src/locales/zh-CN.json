@@ -7,6 +7,7 @@
   "navbar": {
     "Home": "主页",
     "Profile": "我的",
+    "ThemePreview": "🎨 主题预览",
     "Mock": "🗂️ Mock",
     "Charts": "📊 图表",
     "UnoCSS": "⚡ UnoCSS",
@@ -28,9 +29,60 @@
 
   "home": {
     "darkMode": "🌗 深色模式",
+    "theme": "🎨 主题色",
     "language": "📚 多语言",
     "settings": "设置",
     "examples": "示例"
+  },
+
+  "theme": {
+    "seed": "基准色",
+    "roles": "配色角色",
+    "purple": "紫罗兰",
+    "blue": "海蓝",
+    "green": "森绿",
+    "rose": "玫红",
+    "orange": "琥珀",
+    "teal": "青碧",
+    "jade": "翡翠",
+    "red": "朱红",
+    "slate": "暗紫灰",
+    "preview": "预览效果"
+  },
+
+  "themePreview": {
+    "primary": "主要按钮",
+    "plain": "朴素按钮",
+    "round": "圆角",
+    "loading": "加载中...",
+    "default": "默认",
+    "disabled": "禁用",
+    "block": "块级按钮",
+    "notice": "切换主页设置中的主题色，所有组件会跟随变化。",
+    "form": "表单",
+    "input": "输入框",
+    "placeholder": "请输入内容",
+    "switch": "开关",
+    "tab": "标签",
+    "tabContent": "标签 {n} 的内容",
+    "photo": "相册",
+    "chat": "消息",
+    "favorite": "收藏",
+    "setting": "设置",
+    "step1": "下单",
+    "step2": "发货",
+    "step3": "签收",
+    "collapse": "面板 {n}",
+    "collapseContent": "折叠面板的内容，点击标题可展开或收起。",
+    "feedback": "反馈",
+    "success": "操作成功",
+    "notify": "这是一条通知",
+    "option": "选项 {n}",
+    "cancel": "取消",
+    "dialogTitle": "提示",
+    "dialogMessage": "这是一个确认弹窗。",
+    "empty": "暂无内容",
+    "retry": "重新加载"
   },
 
   "profile": {

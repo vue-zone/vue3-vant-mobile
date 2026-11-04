@@ -7,6 +7,7 @@
   "navbar": {
     "Home": "Home",
     "Profile": "Profile",
+    "ThemePreview": "🎨 Theme Preview",
     "Mock": "🗂️ Mock",
     "Charts": "📊 Charts",
     "UnoCSS": "⚡ UnoCSS",
@@ -28,9 +29,60 @@
 
   "home": {
     "darkMode": "🌗 Dark Mode",
+    "theme": "🎨 Theme Color",
     "language": "📚 Language",
     "settings": "Settings",
     "examples": "Examples"
+  },
+
+  "theme": {
+    "seed": "Seed color",
+    "roles": "Color roles",
+    "purple": "Violet",
+    "blue": "Ocean",
+    "green": "Forest",
+    "rose": "Rose",
+    "orange": "Amber",
+    "teal": "Teal",
+    "jade": "Jade",
+    "red": "Crimson",
+    "slate": "Slate",
+    "preview": "Preview"
+  },
+
+  "themePreview": {
+    "primary": "Primary",
+    "plain": "Plain",
+    "round": "Round",
+    "loading": "Loading...",
+    "default": "Default",
+    "disabled": "Disabled",
+    "block": "Block Button",
+    "notice": "Change the theme color in Home settings and every component follows.",
+    "form": "Form",
+    "input": "Input",
+    "placeholder": "Enter text",
+    "switch": "Switch",
+    "tab": "Tab",
+    "tabContent": "Content of tab {n}",
+    "photo": "Photos",
+    "chat": "Chat",
+    "favorite": "Favorite",
+    "setting": "Settings",
+    "step1": "Ordered",
+    "step2": "Shipped",
+    "step3": "Delivered",
+    "collapse": "Panel {n}",
+    "collapseContent": "Collapse content. Tap the title to expand or collapse.",
+    "feedback": "Feedback",
+    "success": "Success",
+    "notify": "This is a notification",
+    "option": "Option {n}",
+    "cancel": "Cancel",
+    "dialogTitle": "Notice",
+    "dialogMessage": "This is a confirm dialog.",
+    "empty": "Nothing here",
+    "retry": "Reload"
   },
 
   "profile": {

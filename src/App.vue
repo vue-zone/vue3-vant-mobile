@@ -1,8 +1,9 @@
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n'
-import { useRouteCacheStore } from '@/stores'
+import { useRouteCacheStore, useThemeStore } from '@/stores'
 
 const { t } = useI18n()
+const themeStore = useThemeStore()
 
 useHead({
   title: () => t('app.name'),
@@ -13,7 +14,7 @@ useHead({
     },
     {
       name: 'theme-color',
-      content: () => isDark.value ? '#0B0A0A' : '#ffffff',
+      content: () => isDark.value ? '#0B0A0A' : themeStore.current.surface,
     },
   ],
   link: [
@@ -37,7 +38,13 @@ const mode = computed(() => {
 </script>
 
 <template>
-  <van-config-provider :theme="mode">
+  <van-config-provider
+    :theme="mode"
+    :theme-vars="themeStore.themeVars"
+    :theme-vars-light="themeStore.themeVarsLight"
+    :theme-vars-dark="themeStore.themeVarsDark"
+    theme-vars-scope="global"
+  >
     <nav-bar />
     <router-view v-slot="{ Component }">
       <section class="app-wrapper">
